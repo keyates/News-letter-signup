@@ -10,41 +10,57 @@
 <body>
     <div class="title">
         <h1>Weekly Product Management Newsletter</h1>
-        <p>Enter your information below to stay up to date on all the latest in product management, product growth, and industry news :)</p>
+        <p>Enter your information below to stay up to date on all the latest in product management, product growth, and industry news!</p>
         <hr>
     </div>
     <div class="newsletter">
         <h2>Newsletter Sign Up</h2>
         <hr>
-        <form>
-            <input type="Name" placeholder="First Name Last Name" required> 
+        <div class="form">
+            <input type="Name" id = "Name" placeholder="First Name Last Name" required> 
             <br>
-            <input type="Age" placeholder="Your Age Here" required> 
+            <input type="Age" id = "Age" placeholder="Your Age Here" required> 
             <br>
-            <input type="Email" placeholder="Write your email" required> 
+            <input type="Email" id = "email" placeholder="Write your email" required> 
             <br>
             <hr>
             <h2>How did you hear about us?</h2>
-            <input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn">
-            <label for="LinkedIn"> LinkedIn</label>
-            <br>
-            <input type="checkbox" id="Facebook" name="Facebook" value="Facebook">
-            <label for="Facebook"> Facebook</label>
-            <br>
-            <input type="checkbox" id="Twitter" name="Twitter" value="Twitter">
-            <label for="Twitter"> Twitter</label>
-            <br>
-            <input type="checkbox" id="Word of Mouth" name="Word of Mouth" value="Word of Mouth">
-            <label for="Word of Mouth"> Word of Mouth</label>
-            <br>
-            <input type="checkbox" id="Other" name="Other" value="Other">
-            <label for="Other"> Other</label>
-            <br>
+            <div class = "checkbox-container">
+                <div class = "checkbox-wrapper">
+                    <input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn">
+                    <label for="LinkedIn"> LinkedIn</label>
+                </div>
+                <div class = "checkbox-wrapper">
+                    <input type="checkbox" id="Facebook" name="Facebook" value="Facebook">
+                    <label for="Facebook"> Facebook</label>
+                </div>
+                <div class = "checkbox-wrapper">
+                    <input type="checkbox" id="Twitter" name="Twitter" value="Twitter">
+                    <label for="Twitter"> Twitter</label>
+                </div>
+                <div class = "checkbox-wrapper">
+                    <input type="checkbox" id="Word of Mouth" name="Word of Mouth" value="Word of Mouth">
+                    <label for="Word of Mouth"> Word of Mouth</label>
+                </div>
+                <div class = "checkbox-wrapper">
+                    <input type="checkbox" id="Other" name="Other" value="Other">
+                    <label for="Other"> Other</label>
+                </div>
+            </div>
+            
             <button type="submit"> Submit Now</button>
-        </form>
+            <ul class="errors">
+            </ul>
+        </div>
     </div>
+<div class="modal">
+    <div class="modal-body">
+        <p>Thank you for signing up! Check your email for a confirmation link :)</p>
+    </div>
+</div>
 
 <script src="app.js"></script>
 
 </body>
+
 </html>
